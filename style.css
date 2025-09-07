@@ -1,5 +1,12 @@
-* {
-  box-sizing: border-box;
+*{
+-webkit-touch-callout: none; 
+-webkit-user-select: none; 
+-khtml-user-select: none; 
+-moz-user-select: none; 
+-ms-user-select: none; 
+  
+ box-sizing: border-box;
+ font-family: Arial, sans-serif;
 }
 
 body {
@@ -184,4 +191,5 @@ input:focus, textarea:focus {
   color: #27ae60;
   font-size: 14px;
 }
+
 
