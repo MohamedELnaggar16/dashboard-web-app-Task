@@ -11,12 +11,12 @@ let editingPost = null;
 function renderLogin(){
   document.getElementById("app").innerHTML = `
     <div style="max-width:500px; margin:50px auto;">
-      <h2> Login </h2>
+      <h2  style="padding-bottom:50px; color:grey;"> Login </h2>
       <label>Email:</label>
       <input id="email" type="email" placeholder="...@example.com"><br>
       <label>Password:</label>
       <input id="password" type="password" placeholder="******"><br>
-      <button onclick="login()"> Login </button>
+      <button id="loginBtn" onclick="login()"> Login </button>
       <div id="loginMsg" style="color:red;"> </div>
     </div>
   `;
@@ -45,8 +45,8 @@ function renderDashboard(){
     </header>
     <div class="container">
       <aside>
-        <button onclick="showPosts()">Posts</button>
-        <button onclick="showForm()">Create Post</button>
+        <button style="margin-bottom:5px;" onclick="showPosts()">Posts</button>
+        <button style="margin-top:5px;" onclick="showForm()">Create Post</button>
       </aside>
       <main id="main"></main>
     </div>
@@ -97,7 +97,7 @@ function renderTable(){
     </tr>`).join("");
 
   document.getElementById("tableWrap").innerHTML=`
-    <table>
+    <table >
       <thead>
         <tr>
           <th onclick="sortBy('id')">ID</th>
@@ -108,10 +108,10 @@ function renderTable(){
       </thead>
       <tbody>${rows}</tbody>
     </table>
-    <div>
-      <button onclick="prevPage()">Prev</button>
+    <div style="padding-top:20px;">
+      <button  id="NextPrevBtn" onclick="prevPage()">Prev</button>
       Page ${currentPage} of ${Math.ceil(filtered.length/pageSize)}
-      <button onclick="nextPage()">Next</button>
+      <button  id="NextPrevBtn" onclick="nextPage()">Next</button>
     </div>
   `;
 }
