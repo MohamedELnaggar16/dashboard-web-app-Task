@@ -13,7 +13,7 @@ function renderLogin(){
     <div style="max-width:500px; margin:50px auto;">
       <h2  style="padding-bottom:50px; color:grey;"> Login </h2>
       <label>Email:</label>
-      <input id="email" type="email" placeholder="...@example.com"><br>
+      <input id="email" type="email" placeholder="text@text.com"><br>
       <label>Password:</label>
       <input id="password" type="password" placeholder="******"><br>
       <button id="loginBtn" onclick="login()"> Login </button>
@@ -177,3 +177,4 @@ function editPost(id){
 
 
 renderLogin();
+
