@@ -4,9 +4,8 @@
 -khtml-user-select: none; 
 -moz-user-select: none; 
 -ms-user-select: none; 
-  
  box-sizing: border-box;
- font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -192,4 +191,60 @@ input:focus, textarea:focus {
   font-size: 14px;
 }
 
+//MOBILE RESPONSIVE STYLES 
 
+@media (max-width: 768px) {
+  /* Layout: stack sidebar above content */
+  .shell {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  aside a {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  /* Table: allow horizontal scroll */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* Forms */
+  input, textarea, select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+}
