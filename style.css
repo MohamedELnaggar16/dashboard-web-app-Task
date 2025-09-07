@@ -4,14 +4,14 @@
 -khtml-user-select: none; 
 -moz-user-select: none; 
 -ms-user-select: none; 
+ 
  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+ font-family: Arial, sans-serif;
 }
 
 body {
   background: #f4f6f9;
   color: #333;
-  line-height: 1.5;
 }
 
 /* Header */
@@ -248,3 +248,4 @@ input:focus, textarea:focus {
     font-size: 18px;
   }
 }
+
