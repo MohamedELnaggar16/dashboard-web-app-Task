@@ -1,8 +1,5 @@
-/* Reset some default styles */
 * {
   box-sizing: border-box;
-
-  font-family: Arial, sans-serif;
 }
 
 body {
@@ -187,3 +184,4 @@ input:focus, textarea:focus {
   color: #27ae60;
   font-size: 14px;
 }
+
